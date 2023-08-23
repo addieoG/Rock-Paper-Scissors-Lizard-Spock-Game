@@ -32,13 +32,25 @@ body {
     width: 100%;
     height: 65%;
     background: #fbeee0;
+    flex-direction: column;
 }
 
-/* style buttons */
+/* button display */
 .buttons {
+    margin-top: 10px;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-around;
+    max-height: 15px;
+}
+
+/* scoreboard display */
+#score-board {
+    display: flex;
+    margin-top: 15px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
 }
