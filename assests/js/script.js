@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded")
+
 const playerChoice = document.querySelector("#players-choice");
 const computersChoice = document.querySelector("#computers-choice");
 const playerSelection = document.querySelectorAll(".player-selection");
@@ -43,7 +45,6 @@ function computerSelection() {
         case 5:
             computer = "Spock";
             break;
-
     }
 };
 
