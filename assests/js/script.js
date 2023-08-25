@@ -7,13 +7,12 @@ let computer;
 let result;
 runGame()
 
-
-
 /**
  * Displays the players selection, computers selection and score board
  */
 function runGame() {
     playerSelection.forEach(button => button.addEventListener("click", () => {
+        git
         player = button.textContent;
         computerSelection();
         playerChoice.textContent = `Player:${player}`;
@@ -50,9 +49,9 @@ function computerSelection() {
 
 /** logic statement to determine winner */
 function determineWinner() {
-    if (playerChoice == computersChoice) {
-        result = "Draw!"
+    if (player == computer) {
+        return "draw"
     } else {
-        result = "Broken code"
+        return "Broken code"
     }
 };
