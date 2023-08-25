@@ -1,17 +1,30 @@
 const playerChoice = document.querySelector("#players-choice");
 const computersChoice = document.querySelector("#computers-choice");
 const playerSelection = document.querySelectorAll(".player-selection");
+const displayResult = document.querySelector("#display-result");
 let player;
 let computer;
+let result;
+runGame()
 
-playerSelection.forEach(button => button.addEventListener("click", () => {
-    player = button.textContent;
-    computerSelection();
-    playerChoice.textContent = `Player:${player}`;
-    computersChoice.textContent = `Computer:${computer}`;
 
-}));
 
+/**
+ * Displays the players selection, computers selection and score board
+ */
+function runGame() {
+    playerSelection.forEach(button => button.addEventListener("click", () => {
+        player = button.textContent;
+        computerSelection();
+        playerChoice.textContent = `Player:${player}`;
+        computersChoice.textContent = `Computer:${computer}`;
+        displayResult.textContent = determineWinner();
+
+    }));
+};
+/**
+ * function to generate computer response, generates a random int between 1 and 5 and returns a string
+ */
 function computerSelection() {
     const randNum = Math.floor(Math.random() * 5) + 1;
 
@@ -32,5 +45,14 @@ function computerSelection() {
             computer = "Spock";
             break;
 
+    }
+};
+
+/** logic statement to determine winner */
+function determineWinner() {
+    if (playerChoice == computersChoice) {
+        result = "Draw!"
+    } else {
+        result = "Broken code"
     }
 };
