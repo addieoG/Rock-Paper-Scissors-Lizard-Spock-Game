@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded")
+//document.addEventListener("DOMContentLoaded")
 
 const playerChoice = document.querySelector("#players-choice");
 const computersChoice = document.querySelector("#computers-choice");
