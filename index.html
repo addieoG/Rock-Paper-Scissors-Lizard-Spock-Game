@@ -15,18 +15,19 @@
     <div id="game-container">
 
         <div id="game-display-screen">
-            <p class="game-display-text">Player:</p>
+            <p class="game-display-text" id="players-choice">Player:</p>
             <p class="game-display-text">Vs</p>
-            <p class="game-display-text">Computer:</p>
+            <p class="game-display-text" id="computers-choice">Computer:</p>
             <p class="game-display-text">Result:</p>
         </div>
         <div id=btn-container>
             <div class="buttons">
-                <button><i class="fa-regular fa-hand-back-fist"></i></button>
-                <button><i class="fa-regular fa-hand"></i></button>
-                <button><i class="fa-regular fa-hand-scissors"></i></button>
-                <button><i class="fa-regular fa-hand-lizard"></i></button>
-                <button><i class="fa-regular fa-hand-spock"></i></button>
+                <button data-type="Rock" class="player-selection"><i class="fa-regular fa-hand-back-fist"></i></button>
+                <button data-type="Paper" class="player-selection"><i class="fa-regular fa-hand"></i></button>
+                <button data-type="Scissors" class="player-selection"><i
+                        class="fa-regular fa-hand-scissors"></i></button>
+                <button data-type="Lizard" class="player-selection"><i class="fa-regular fa-hand-lizard"></i></button>
+                <button data-type="Spock" class="player-selection"><i class="fa-regular fa-hand-spock"></i></button>
             </div>
 
         </div>
