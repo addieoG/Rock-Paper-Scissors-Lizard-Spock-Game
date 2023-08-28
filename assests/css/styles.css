@@ -88,6 +88,8 @@ li {
     padding: 6px;
     text-decoration: none;
     margin-top: 20px;
+    box-shadow: #5E5DF0 0 10px 50px -10px;
+    box-sizing: border-box;
 }
 
 /* style game container */
@@ -157,6 +159,8 @@ li {
     cursor: pointer;
     margin: 2px;
     background: black;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
 }
 
 .game-display-text {
@@ -182,6 +186,7 @@ li {
     color: yellow;
     height: 25px;
     cursor: pointer;
+
 }
 
 .start-game button {
@@ -195,6 +200,8 @@ li {
     height: 25px;
     margin-bottom: 10px;
     cursor: pointer;
+    box-shadow: #5E5DF0 0 10px 50px -10px;
+    box-sizing: border-box;
 }
 
 #rock-container {
@@ -207,12 +214,40 @@ li {
     width: 100px;
     color: antiquewhite;
     background: black;
+    box-shadow: #5E5DF0 0 10px 50px -10px;
+    box-sizing: border-box;
+    height: 25px;
 }
 
 .rule-btn a {
     color: yellow;
     font-family: 'Press Start 2P', cursive;
     font-size: 08px;
+}
+
+
+a {
+    transition: all .2s ease-in-out;
+}
+
+a:hover {
+    transform: scale(1.2);
+}
+
+button {
+    transition: all .2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.rule-btn {
+    transition: all .2s ease-in-out;
+}
+
+.rule-btn:hover {
+    transform: scale(1.1);
 }
 
 
