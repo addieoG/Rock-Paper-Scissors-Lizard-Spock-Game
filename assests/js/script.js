@@ -54,6 +54,24 @@ function bestOfFive() {
     }));
 };
 
+function bestOfSeven() {
+    alert("hello");
+    playerSelection.forEach(button => button.addEventListener("click", () => {
+        player = button.textContent;
+        computerSelection();
+        playerChoice.textContent = `Player:${player}`;
+        computersChoice.textContent = `Computer:${computer}`;
+        displayResult.textContent = determineWinner();
+        playerScoreElement.textContent = playerScore;
+        computerScoreElement.textContent = computerScore;
+        scoreBoard();
+        if (playerScore == 4)
+            alert("Congratulations you win!!");
+        else if (computerScore == 4)
+            alert("Sorry, you loose this round. Please hit reset to play again!")
+    }));
+};
+
 
 
 
