@@ -31,6 +31,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    height: 1200px;
 }
 
 #game-body {
@@ -275,7 +276,7 @@ button:hover {
 
 .footer {
     display: flex;
-    flex-shrink: 1;
+    flex-shrink: 0;
     height: 100px;
     font-family: 'Bungee Shade', cursive;
     background: yellow;
