@@ -30,7 +30,6 @@ a {
 body {
     display: flex;
     justify-content: center;
-    /* height: 1200px;*/
     flex-wrap: wrap;
 }
 
@@ -276,7 +275,7 @@ button:hover {
 
 .footer {
     display: flex;
-    flex-shrink: 0;
+    flex-shrink: 1;
     height: 100px;
     font-family: 'Bungee Shade', cursive;
     background: yellow;
