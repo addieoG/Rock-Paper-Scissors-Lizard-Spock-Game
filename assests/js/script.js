@@ -1,25 +1,32 @@
-//document.addEventListener("DOMContentLoaded")
-
 const playerChoice = document.querySelector("#players-choice");
 const computersChoice = document.querySelector("#computers-choice");
 const playerSelection = document.querySelectorAll(".player-selection");
 const displayResult = document.querySelector("#display-result");
+const playerScoreElement = document.querySelector("#player-score");
+const computerScoreElement = document.querySelector("#computer-score");
 let player;
 let computer;
 let result;
+let playerScore = 0;
+let computerScore = 0;
 runGame()
+
+
 
 /**
  * Displays the players selection, computers selection and score board
  */
 function runGame() {
     playerSelection.forEach(button => button.addEventListener("click", () => {
-        git
         player = button.textContent;
         computerSelection();
         playerChoice.textContent = `Player:${player}`;
         computersChoice.textContent = `Computer:${computer}`;
         displayResult.textContent = determineWinner();
+        playerScoreElement.textContent = playerScore;
+        computerScoreElement.textContent = computerScore;
+        scoreBoard()
+
 
     }));
 };
@@ -51,8 +58,18 @@ function computerSelection() {
 /** logic statement to determine winner */
 function determineWinner() {
     if (player == computer) {
-        return "draw"
+        return "Result!! draw!"
     } else {
         return "Broken code"
     }
+};
+
+function scoreBoard() {
+    if (result = "Result!! draw!") {
+        playerScore++;
+
+    } else {
+        console.log("not working")
+    }
+
 };
