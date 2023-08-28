@@ -10,29 +10,12 @@ let computer;
 let result;
 let playerScore = 0;
 let computerScore = 0;
-
 /**
  * Function runs the best of 3 game
  * Displays the players selection, computers selection and score board, 
  * alerts player of game type and alerts player of winner
  */
-function bestOfThree() {
-    alert("You Selected Best Of Three");
-    playerSelection.forEach(button => button.addEventListener("click", () => {
-        player = button.textContent;
-        computerSelection();
-        scoreBoard();
-        playerChoice.textContent = `Player:${player}`;
-        computersChoice.textContent = `Computer:${computer}`;
-        displayResult.textContent = determineWinner();
-        playerScoreElement.textContent = playerScore;
-        computerScoreElement.textContent = computerScore;
-        if (playerScore == 2)
-            alert("Congratulations you win!!\nHit reset to play again!");
-        if (computerScore == 2)
-            alert("Sorry!\nYou lost this round!\nHit reset to try again!")
-    }));
-};
+
 /**
  * Function runs the best of 5 game
  * Displays the players selection, computers selection and score board, 
@@ -53,7 +36,6 @@ function bestOfFive() {
             alert("Congratulations you win!!\nHit reset to play again!");
         if (computerScore == 3)
             alert("Sorry!\nYou lost this round!\nHit reset to try again!")
-
     }));
 };
 
@@ -77,9 +59,6 @@ function bestOfSeven() {
             alert("Congratulations you win!!\nHit reset to play again!");
         if (computerScore == 4)
             alert("Sorry!\nYou lost this round!\nHit reset to try again!")
-
-
-
     }));
 };
 
@@ -140,14 +119,12 @@ function scoreBoard() {
         (player == "Lizard" && (computer == "Paper" || computer == "Spock")) ||
         (player == "Spock" && (computer == "Rock" || computer == "Scissors"))) {
         playerScore++;
-        playerScoreElement.textContent = playerScore;
     } else if ((player == "Rock" && (computer == "Scissors" || computer == "Lizard")) ||
         (computer == "Paper" && (player == "Rock" || player == "Spock")) ||
         (computer == "Scissors" && (player == "Paper" || player == "Lizard")) ||
         (computer == "Lizard" && (player == "Paper" || player == "Spock")) ||
         (computer == "Spock" && (player == "Rock" || player == "Scissors"))) {
         computerScore++;
-        computerScoreElement.textContent = playerScore;
     } else if (computer == player) {
         //do nothing 
     }
