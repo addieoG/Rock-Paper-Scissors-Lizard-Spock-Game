@@ -25,7 +25,8 @@ function runGame() {
         displayResult.textContent = determineWinner();
         playerScoreElement.textContent = playerScore;
         computerScoreElement.textContent = computerScore;
-        scoreBoard()
+        scoreBoard();
+
 
 
     }));
@@ -65,11 +66,11 @@ function determineWinner() {
 };
 
 function scoreBoard() {
-    if (result = "Result!! draw!") {
+    if (player == "Rock" && computer == "Scissors" || computer == "Lizard") {
         playerScore++;
-
-    } else {
-        console.log("not working")
-    }
-
+        playerScoreElement.textContent = playerScore;
+    }; elseif(player == "Paper" && computer == "Rock" || computer == "Spock"); {
+        playerScore++;
+        playerScoreElement.textContent = playerScore;
+    };
 };
