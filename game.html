@@ -8,53 +8,46 @@
     <title>Rock Paper Scissors Lizard Spock</title>
 </head>
 
-
-
-<body>
-
-    <div id="game-container">
-
-        <div id="game-display-screen">
-            <p class="game-display-text" id="players-choice">Player:</p>
-            <p class="game-display-text">Vs</p>
-            <p class="game-display-text" id="computers-choice">Computer:</p>
-            <p class="game-display-text" id="display-result">Result:</p>
-        </div>
-        <div id=btn-container>
-            <div class="buttons">
-                <button data-type="Rock" class="player-selection"><i
-                        class="fa-regular fa-hand-back-fist"></i>Rock</button>
-                <button data-type="Paper" class="player-selection"><i class="fa-regular fa-hand"></i>Paper</button>
-                <button data-type="Scissors" class="player-selection"><i
-                        class="fa-regular fa-hand-scissors"></i>Scissors</button>
-                <button data-type="Lizard" class="player-selection"><i
-                        class="fa-regular fa-hand-lizard"></i>Lizard</button>
-                <button data-type="Spock" class="player-selection"><i
-                        class="fa-regular fa-hand-spock"></i>Spock</button>
+<body id="game-body">
+    <nav id="nav-bar">
+        Rock * Paper * Scissors * Lizard * Spock
+    </nav>
+    <main>
+        <div id="game-container">
+            <div id="game-display-screen">
+                <p class="game-display-text" id="players-choice">Player:</p>
+                <p class="game-display-text">Vs</p>
+                <p class="game-display-text" id="computers-choice">Computer:</p>
+                <p class="game-display-text" id="display-result">Result:</p>
             </div>
+            <div class="start-game">
+                <button onclick="bestOfThree()" id="best-of-three">Best of 3</button>
+                <button onclick="bestOfFive()" id="best-of-five">Best of 5</button>
+                <button onclick="bestOfSeven()" id="best-of-seven">Best of 7</button>
+            </div>
+            <div id=btn-container>
+                <div class="buttons">
+                    <button data-type="Rock" class="player-selection"><i
+                            class="fa-regular fa-hand-back-fist"></i>Rock</button>
+                    <button data-type="Paper" class="player-selection"><i class="fa-regular fa-hand"></i>Paper</button>
+                    <button data-type="Scissors" class="player-selection"><i
+                            class="fa-regular fa-hand-scissors"></i>Scissors</button>
+                    <button data-type="Lizard" class="player-selection"><i
+                            class="fa-regular fa-hand-lizard"></i>Lizard</button>
+                    <button data-type="Spock" class="player-selection"><i
+                            class="fa-regular fa-hand-spock"></i>Spock</button>
+                </div>
+            </div>
+            <div id="score-board">
+                <p>Your score:</p>
+                <p id="player-score">0</p>
+                <p>Computer score:</p>
+                <p id="computer-score">0</p>
+            </div>
+            <div><button onclick="reset()" id="reset">Reset</button></div>
+            <div><a class="rule-page-btn" href="index.html">rules page</a></div>
         </div>
-        <div>
-            <button onclick="bestOfThree()" id="best-of-three">Best of 3</button>
-            <button onclick="bestOfFive()" id="best-of-five">Best of 5</button>
-            <button onclick="bestOfSeven()" id="best-of-seven">Best of 7</button>
-        </div>
-        <div id="score-board">
-            <p>your score</p>
-            <p id="player-score">0</p>
-            <p>computer score</p>
-            <p id="computer-score">0</p>
-        </div>
-        <div><button onclick="location.reload()" id="reset">Reset</button></div>
-        <div><a href="index.html">rules page</a></div>
-
-
-
-
-    </div>
-
-    </div>
-
-
+    </main>
 
 
     <script src="https://kit.fontawesome.com/4830122616.js" crossorigin="anonymous"></script>

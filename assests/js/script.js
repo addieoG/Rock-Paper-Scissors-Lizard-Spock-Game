@@ -21,16 +21,16 @@ function bestOfThree() {
     playerSelection.forEach(button => button.addEventListener("click", () => {
         player = button.textContent;
         computerSelection();
+        scoreBoard();
         playerChoice.textContent = `Player:${player}`;
         computersChoice.textContent = `Computer:${computer}`;
         displayResult.textContent = determineWinner();
         playerScoreElement.textContent = playerScore;
         computerScoreElement.textContent = computerScore;
-        scoreBoard();
         if (playerScore == 2)
-            alert("Congratulations you win!!");
+            alert("Congratulations you win!!\nHit reset to play again!");
         if (computerScore == 2)
-            alert("Sorry, you loose this round. Please hit reset to play again!")
+            alert("Sorry!\nYou lost this round!\nHit reset to try again!")
     }));
 };
 /**
@@ -43,16 +43,17 @@ function bestOfFive() {
     playerSelection.forEach(button => button.addEventListener("click", () => {
         player = button.textContent;
         computerSelection();
+        scoreBoard();
         playerChoice.textContent = `Player:${player}`;
         computersChoice.textContent = `Computer:${computer}`;
         displayResult.textContent = determineWinner();
         playerScoreElement.textContent = playerScore;
         computerScoreElement.textContent = computerScore;
-        scoreBoard();
         if (playerScore == 3)
-            alert("Congratulations you win!!");
+            alert("Congratulations you win!!\nHit reset to play again!");
         if (computerScore == 3)
-            alert("Sorry, you loose this round. Please hit reset to play again!")
+            alert("Sorry!\nYou lost this round!\nHit reset to try again!")
+
     }));
 };
 
@@ -66,16 +67,19 @@ function bestOfSeven() {
     playerSelection.forEach(button => button.addEventListener("click", () => {
         player = button.textContent;
         computerSelection();
+        scoreBoard();
         playerChoice.textContent = `Player:${player}`;
         computersChoice.textContent = `Computer:${computer}`;
         displayResult.textContent = determineWinner();
         playerScoreElement.textContent = playerScore;
         computerScoreElement.textContent = computerScore;
-        scoreBoard();
         if (playerScore == 4)
-            alert("Congratulations you win!!");
+            alert("Congratulations you win!!\nHit reset to play again!");
         if (computerScore == 4)
-            alert("Sorry, you loose this round. Please hit reset to play again!")
+            alert("Sorry!\nYou lost this round!\nHit reset to try again!")
+
+
+
     }));
 };
 
@@ -149,7 +153,10 @@ function scoreBoard() {
     }
 }
 
-/**
- * Resets the scores and 
- */
-
+function reset() {
+    playerScore = 0;
+    computerScore = 0;
+    playerScoreElement.textContent = playerScore;
+    computerScoreElement.textContent = computerScore;
+    alert("Please Select your difficulty")
+}

@@ -11,6 +11,11 @@ body {
     display: flex;
     justify-content: center;
     height: 1000px;
+    flex-wrap: wrap;
+}
+
+#game-body {
+    background: black;
 }
 
 h2,
@@ -36,10 +41,9 @@ li {
     position: fixed;
     margin-top: 0;
     width: 100%;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid antiquewhite;
     background: yellow;
     font-family: 'Bungee Shade', cursive;
-
     z-index: 1;
     flex-wrap: wrap;
     font-size: 2em;
@@ -74,13 +78,14 @@ li {
 /* style game container */
 #game-container {
     display: flex;
-    width: 40vh;
-    border-radius: 2px;
-    border-color: black;
+    width: 45vh;
     border-style: solid;
     margin-top: 100px;
     flex-direction: column;
     height: 550px;
+    border-radius: 8px;
+    box-shadow: -10px -10px 30px 0 #fff, 10px 10px 30px 0 #1d0dca17;
+    box-sizing: border-box;
 }
 
 /*style screen for game */
@@ -102,6 +107,18 @@ li {
     height: 65%;
     background: #fbeee0;
     flex-direction: column;
+}
+
+/*ScoreBoard*/
+#score-board {
+    margin-top: 8px;
+    display: flex;
+    width: inherit;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 80%;
+    flex-direction: column;
+    align-items: center;
+    color: antiquewhite;
 }
 
 /* button display */
@@ -133,50 +150,44 @@ li {
     flex-shrink: 0;
 }
 
-@media screen and (max-width: 896px) {
+@media screen and (max-width: 894px) {
+    #nav-bar {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 838px) {
+    #nav-bar {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 698px) {
+    #nav-bar {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 559px) {
+    #nav-bar {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 419px) {
+    #nav-bar {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    #nav-bar {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 335px) {
     #game-container {
-        margin-top: 200px;
-    }
-}
-
-@media screen and (max-width: 520px) {
-    #game-container {
-        margin-top: 260px;
-    }
-}
-
-@media screen and (max-width: 326px) {
-    #game-container {
-        margin-top: 350px;
-    }
-}
-
-@media screen and (max-width: 326px) {
-    #game-container {
-        margin-top: 420px;
-    }
-}
-
-@media screen and (max-width: 893px) {
-    .index-main {
-        margin-top: 200px;
-    }
-}
-
-@media screen and (max-width: 516px) {
-    .index-main {
-        margin-top: 150px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .index-main {
-        margin-top: 200px;
-    }
-}
-
-@media screen and (max-width: 277px) {
-    .index-main {
-        margin-top: 300px;
+        float: left;
     }
 }
