@@ -10,11 +10,29 @@ let computer;
 let result;
 let playerScore = 0;
 let computerScore = 0;
+
 /**
  * Function runs the best of 3 game
  * Displays the players selection, computers selection and score board, 
  * alerts player of game type and alerts player of winner
  */
+function bestOfThree() {
+    alert("You Selected Best Of Three");
+    playerSelection.forEach(button => button.addEventListener("click", () => {
+        player = button.textContent;
+        computerSelection();
+        scoreBoard();
+        playerChoice.textContent = `Player:${player}`;
+        computersChoice.textContent = `Computer:${computer}`;
+        displayResult.textContent = determineWinner();
+        playerScoreElement.textContent = playerScore;
+        computerScoreElement.textContent = computerScore;
+        if (playerScore === 2)
+            alert("Congratulations you win!!\nHit reset to play again!");
+        if (computerScore === 2)
+            alert("Sorry!\nYou lost this round!\nHit reset to try again!")
+    }));
+};
 
 /**
  * Function runs the best of 5 game
@@ -32,9 +50,9 @@ function bestOfFive() {
         displayResult.textContent = determineWinner();
         playerScoreElement.textContent = playerScore;
         computerScoreElement.textContent = computerScore;
-        if (playerScore == 3)
+        if (playerScore === 3)
             alert("Congratulations you win!!\nHit reset to play again!");
-        if (computerScore == 3)
+        if (computerScore === 3)
             alert("Sorry!\nYou lost this round!\nHit reset to try again!")
     }));
 };
@@ -55,9 +73,9 @@ function bestOfSeven() {
         displayResult.textContent = determineWinner();
         playerScoreElement.textContent = playerScore;
         computerScoreElement.textContent = computerScore;
-        if (playerScore == 4)
+        if (playerScore === 4)
             alert("Congratulations you win!!\nHit reset to play again!");
-        if (computerScore == 4)
+        if (computerScore === 4)
             alert("Sorry!\nYou lost this round!\nHit reset to try again!")
     }));
 };
@@ -119,7 +137,7 @@ function scoreBoard() {
         (player == "Lizard" && (computer == "Paper" || computer == "Spock")) ||
         (player == "Spock" && (computer == "Rock" || computer == "Scissors"))) {
         playerScore++;
-    } else if ((player == "Rock" && (computer == "Scissors" || computer == "Lizard")) ||
+    } else if ((computer == "Rock" && (player == "Scissors" || player == "Lizard")) ||
         (computer == "Paper" && (player == "Rock" || player == "Spock")) ||
         (computer == "Scissors" && (player == "Paper" || player == "Lizard")) ||
         (computer == "Lizard" && (player == "Paper" || player == "Spock")) ||
@@ -130,10 +148,10 @@ function scoreBoard() {
     }
 }
 
+
 function reset() {
     playerScore = 0;
     computerScore = 0;
     playerScoreElement.textContent = playerScore;
     computerScoreElement.textContent = computerScore;
-    alert("Please Select your difficulty")
 }
