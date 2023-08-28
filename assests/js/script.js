@@ -14,7 +14,9 @@ let playerScore = 0;
 let computerScore = 0;
 
 /**
- * Displays the players selection, computers selection and score board
+ * Function runs the best of 3 game
+ *  Displays the players selection, computers selection and score board, 
+ * alerts player of game type and alerts player of winner
  */
 function bestOfThree() {
     alert("hello");
@@ -28,9 +30,37 @@ function bestOfThree() {
         computerScoreElement.textContent = computerScore;
         scoreBoard();
         if (playerScore == 2)
-            alert("Game Over");
+            alert("Congratulations you win!!");
+        else if (computerScore == 2)
+            alert("Sorry, you loose this round. Please hit reset to play again!")
     }));
 };
+
+function bestOfFive() {
+    alert("hello");
+    playerSelection.forEach(button => button.addEventListener("click", () => {
+        player = button.textContent;
+        computerSelection();
+        playerChoice.textContent = `Player:${player}`;
+        computersChoice.textContent = `Computer:${computer}`;
+        displayResult.textContent = determineWinner();
+        playerScoreElement.textContent = playerScore;
+        computerScoreElement.textContent = computerScore;
+        scoreBoard();
+        if (playerScore == 3)
+            alert("Congratulations you win!!");
+        else if (computerScore == 3)
+            alert("Sorry, you loose this round. Please hit reset to play again!")
+    }));
+};
+
+
+
+
+
+
+
+
 /**
  * function to generate computer response, generates a random int between 1 and 5 and returns a string
  */
