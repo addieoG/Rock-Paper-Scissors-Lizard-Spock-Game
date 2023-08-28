@@ -1,12 +1,10 @@
-
-
+document.addEventListener("DOMContentLoaded", function () { });
 const playerChoice = document.querySelector("#players-choice");
 const computersChoice = document.querySelector("#computers-choice");
 const playerSelection = document.querySelectorAll(".player-selection");
 const displayResult = document.querySelector("#display-result");
 const playerScoreElement = document.querySelector("#player-score");
 const computerScoreElement = document.querySelector("#computer-score");
-
 let player;
 let computer;
 let result;
@@ -15,11 +13,11 @@ let computerScore = 0;
 
 /**
  * Function runs the best of 3 game
- *  Displays the players selection, computers selection and score board, 
+ * Displays the players selection, computers selection and score board, 
  * alerts player of game type and alerts player of winner
  */
 function bestOfThree() {
-    alert("hello");
+    alert("You Selected Best Of Three");
     playerSelection.forEach(button => button.addEventListener("click", () => {
         player = button.textContent;
         computerSelection();
@@ -31,13 +29,17 @@ function bestOfThree() {
         scoreBoard();
         if (playerScore == 2)
             alert("Congratulations you win!!");
-        else if (computerScore == 2)
+        if (computerScore == 2)
             alert("Sorry, you loose this round. Please hit reset to play again!")
     }));
 };
-
+/**
+ * Function runs the best of 5 game
+ * Displays the players selection, computers selection and score board, 
+ * alerts player of game type and alerts player of winner
+ */
 function bestOfFive() {
-    alert("hello");
+    alert("You Selected Best Of Five");
     playerSelection.forEach(button => button.addEventListener("click", () => {
         player = button.textContent;
         computerSelection();
@@ -49,13 +51,18 @@ function bestOfFive() {
         scoreBoard();
         if (playerScore == 3)
             alert("Congratulations you win!!");
-        else if (computerScore == 3)
+        if (computerScore == 3)
             alert("Sorry, you loose this round. Please hit reset to play again!")
     }));
 };
 
+/**
+ * Function runs the best of 7 game
+ * Displays the players selection, computers selection and score board, 
+ * alerts player of game type and alerts player of winner
+ */
 function bestOfSeven() {
-    alert("hello");
+    alert("You Selected Best Of Seven");
     playerSelection.forEach(button => button.addEventListener("click", () => {
         player = button.textContent;
         computerSelection();
@@ -67,17 +74,10 @@ function bestOfSeven() {
         scoreBoard();
         if (playerScore == 4)
             alert("Congratulations you win!!");
-        else if (computerScore == 4)
+        if (computerScore == 4)
             alert("Sorry, you loose this round. Please hit reset to play again!")
     }));
 };
-
-
-
-
-
-
-
 
 /**
  * function to generate computer response, generates a random int between 1 and 5 and returns a string
@@ -149,9 +149,7 @@ function scoreBoard() {
     }
 }
 
-function reset() {
-    playerScore = 0;
-    computerScore = 0;
-    playerScoreElement.textContent = playerScore;
-    computerScoreElement.textContent = computerScore;
-}
+/**
+ * Resets the scores and 
+ */
+
