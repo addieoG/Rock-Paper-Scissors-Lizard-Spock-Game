@@ -76,8 +76,9 @@ function scoreBoard() {
     } else if ((player == "Rock" && (computer == "Scissors" || computer == "Lizard")) ||
         (computer == "Paper" && (player == "Rock" || player == "Spock")) ||
         (computer == "Scissors" && (player == "Paper" || player == "Lizard")) ||
-        (player == "Lizard" && (computer == "Paper" || computer == "Spock")) ||
-        (player == "Spock" && (computer == "Rock" || computer == "Scissors"))) {
-        playerScore++;
-        playerScoreElement.textContent = playerScore;
+        (computer == "Lizard" && (player == "Paper" || player == "Spock")) ||
+        (computer == "Spock" && (player == "Rock" || player == "Scissors"))) {
+        computerScore++;
+        computerScoreElement.textContent = playerScore;
     }
+}
