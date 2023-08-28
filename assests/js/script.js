@@ -66,11 +66,18 @@ function determineWinner() {
 };
 
 function scoreBoard() {
-    if (player == "Rock" && computer == "Scissors" || computer == "Lizard") {
+    if ((player == "Rock" && (computer == "Scissors" || computer == "Lizard")) ||
+        (player == "Paper" && (computer == "Rock" || computer == "Spock")) ||
+        (player == "Scissors" && (computer == "Paper" || computer == "Lizard")) ||
+        (player == "Lizard" && (computer == "Paper" || computer == "Spock")) ||
+        (player == "Spock" && (computer == "Rock" || computer == "Scissors"))) {
         playerScore++;
         playerScoreElement.textContent = playerScore;
-    }; elseif(player == "Paper" && computer == "Rock" || computer == "Spock"); {
+    } else if ((player == "Rock" && (computer == "Scissors" || computer == "Lizard")) ||
+        (computer == "Paper" && (player == "Rock" || player == "Spock")) ||
+        (computer == "Scissors" && (player == "Paper" || player == "Lizard")) ||
+        (player == "Lizard" && (computer == "Paper" || computer == "Spock")) ||
+        (player == "Spock" && (computer == "Rock" || computer == "Scissors"))) {
         playerScore++;
         playerScoreElement.textContent = playerScore;
-    };
-};
+    }
