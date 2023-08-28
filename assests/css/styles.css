@@ -7,12 +7,17 @@
     border: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     display: flex;
     justify-content: center;
-    height: 1000px;
+    height: 1200px;
     flex-wrap: wrap;
 }
+
 
 #game-body {
     background: black;
@@ -27,6 +32,17 @@ h3 {
 .info-text {
     margin: 20px;
     font-size: 20px;
+}
+
+ol,
+ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    line-height: 25px;
+
 }
 
 li {
@@ -64,7 +80,7 @@ li {
     margin-top: 125px;
 }
 
-#enter-main-page {
+.enter-main-page {
     font-family: 'Press Start 2P', cursive;
     color: yellow;
     border: 3px solid yellow;
@@ -82,7 +98,7 @@ li {
     border-style: solid;
     margin-top: 100px;
     flex-direction: column;
-    height: 550px;
+    height: 600px;
     border-radius: 8px;
     box-shadow: -10px -10px 30px 0 #fff, 10px 10px 30px 0 #1d0dca17;
     box-sizing: border-box;
@@ -111,7 +127,7 @@ li {
 
 /*ScoreBoard*/
 #score-board {
-    margin-top: 8px;
+    margin-top: 10px;
     display: flex;
     width: inherit;
     font-family: 'Press Start 2P', cursive;
@@ -119,6 +135,7 @@ li {
     flex-direction: column;
     align-items: center;
     color: antiquewhite;
+
 }
 
 /* button display */
@@ -145,6 +162,57 @@ li {
     font-size: 80%;
     font-family: 'Press Start 2P', cursive;
 }
+
+.reset-and-rule-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.reset-btn button {
+    border: 2px solid yellow;
+    border-radius: 12px;
+    width: 100px;
+    background: black;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 08px;
+    color: yellow;
+    height: 25px;
+    cursor: pointer;
+}
+
+.start-game button {
+    border: 2px solid yellow;
+    border-radius: 12px;
+    width: 100px;
+    background: black;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 08px;
+    color: yellow;
+    height: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#rock-container {
+    margin-top: 10px;
+}
+
+.rule-btn {
+    border: 2px solid yellow;
+    border-radius: 12px;
+    width: 100px;
+    color: antiquewhite;
+    background: black;
+}
+
+.rule-btn a {
+    color: yellow;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 08px;
+}
+
 
 .footer {
     flex-shrink: 0;

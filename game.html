@@ -27,7 +27,7 @@
             </div>
             <div id=btn-container>
                 <div class="buttons">
-                    <button data-type="Rock" class="player-selection"><i
+                    <button data-type="Rock" class="player-selection" id="rock-container"><i
                             class="fa-regular fa-hand-back-fist"></i>Rock</button>
                     <button data-type="Paper" class="player-selection"><i class="fa-regular fa-hand"></i>Paper</button>
                     <button data-type="Scissors" class="player-selection"><i
@@ -44,8 +44,14 @@
                 <p>Computer score:</p>
                 <p id="computer-score">0</p>
             </div>
-            <div><button onclick="reset()" id="reset">Reset</button></div>
-            <div><a class="rule-page-btn" href="index.html">rules page</a></div>
+            <div class="reset-and-rule-container">
+                <div class="reset-btn">
+                    <button onclick="reset()" id="reset">Reset</button>
+                </div>
+                <div class="rule-btn">
+                    <a class="rule-page-btn" href="index.html">Rules page</a>
+                </div>
+            </div>
         </div>
     </main>
 
