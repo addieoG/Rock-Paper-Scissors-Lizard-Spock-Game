@@ -115,7 +115,7 @@ function determineWinner() {
         (player == "Lizard" && (computer == "Paper" || computer == "Spock")) ||
         (player == "Spock" && (computer == "Rock" || computer == "Scissors"))) {
         return "You Win"
-    } else if ((player == "Rock" && (computer == "Scissors" || computer == "Lizard")) ||
+    } else if ((computer == "Rock" && (player == "Scissors" || player == "Lizard")) ||
         (computer == "Paper" && (player == "Rock" || player == "Spock")) ||
         (computer == "Scissors" && (player == "Paper" || player == "Lizard")) ||
         (computer == "Lizard" && (player == "Paper" || player == "Spock")) ||
