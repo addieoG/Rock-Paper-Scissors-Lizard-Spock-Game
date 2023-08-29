@@ -106,7 +106,7 @@ function computerSelection() {
 };
 
 /** 
- * logic statement that displays if you won, loss or it's a draw to the dom
+ * logic statement that displays if you won, lost or it's a draw to the dom
 */
 function determineWinner() {
     if ((player == "Rock" && (computer == "Scissors" || computer == "Lizard")) ||
@@ -129,7 +129,6 @@ function determineWinner() {
 /** 
  * logic statement that determines if the player or the computer has won
 */
-
 function scoreBoard() {
     if ((player == "Rock" && (computer == "Scissors" || computer == "Lizard")) ||
         (player == "Paper" && (computer == "Rock" || computer == "Spock")) ||
@@ -147,11 +146,14 @@ function scoreBoard() {
         //do nothing 
     }
 }
-
+/** 
+ * Function to reset scores and allow you to choose difficulty again. 
+*/
 
 function reset() {
     playerScore = 0;
     computerScore = 0;
     playerScoreElement.textContent = playerScore;
     computerScoreElement.textContent = computerScore;
+
 }

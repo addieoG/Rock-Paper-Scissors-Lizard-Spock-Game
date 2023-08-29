@@ -12,10 +12,12 @@
 </head>
 
 <body id="game-body">
+    <!-- Nav bar with game title-->
     <nav id="nav-bar">
         Rock * Paper * Scissors * Lizard * Spock
     </nav>
     <main>
+        <!--"Screen to mimic a device screen to display game results"-->
         <div id="game-container">
             <div id="game-display-screen">
                 <p class="game-display-text" id="players-choice">Player:</p>
@@ -23,11 +25,13 @@
                 <p class="game-display-text" id="computers-choice">Computer:</p>
                 <p class="game-display-text" id="display-result">Result:</p>
             </div>
+            <!-- buttons to set difficulty settings and run game-->
             <div class="start-game">
                 <button onclick="bestOfThree()" id="best-of-three">Best of 3</button>
                 <button onclick="bestOfFive()" id="best-of-five">Best of 5</button>
                 <button onclick="bestOfSeven()" id="best-of-seven">Best of 7</button>
             </div>
+            <!-- Buttons for user input -->
             <div id=btn-container>
                 <div class="buttons">
                     <button data-type="Rock" class="player-selection" id="rock-container"><i
@@ -42,23 +46,26 @@
                             class="fa-regular fa-hand-spock" style="margin-right: 10px;"></i>Spock</button>
                 </div>
             </div>
+            <!-- To Display the result of a round -->
             <div id="score-board">
                 <p class="score-board-p">Your score:</p>
                 <p class="score-board-p" id="player-score">0</p>
                 <p class="score-board-p">Computer score:</p>
                 <p class="score-board-p" id="computer-score">0</p>
             </div>
+            <!-- resets the score and allows you to choose difficulty again-->
             <div class="reset-and-rule-container">
                 <div class="reset-btn">
                     <button onclick="reset()" id="reset">Reset</button>
                 </div>
+                <!-- Naviagtes back to main page-->
                 <div class="rule-btn">
                     <a class="rule-page-btn" href="index.html">Rules page</a>
                 </div>
             </div>
         </div>
     </main>
-
+    <!-- simple footer with a follow me link that opens github-->
     <footer class="footer">
         <p><a target="_blank" href="https://github.com/addieoG">Follow Me <i class="fa-brands fa-github"
                     style="color: #000000;"></i></a></p>

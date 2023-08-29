@@ -7,6 +7,7 @@
     border: none;
 }
 
+/* Add custom scroll bar*/
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -27,6 +28,7 @@ a {
     text-decoration: none;
 }
 
+/* Style Body*/
 body {
     display: flex;
     justify-content: center;
@@ -34,21 +36,25 @@ body {
     height: 1200px;
 }
 
+/* set the body of the game background color */
 #game-body {
     background: black;
 }
 
+/* Style sub headings */
 h2,
 h3 {
     font-family: 'Press Start 2P', cursive;
     margin: 20px;
 }
 
+/* set font and margins on main page for body text */
 .info-text {
     margin: 20px;
     font-size: 20px;
 }
 
+/* Set rules of ordered and unorderd lists */
 ol,
 ul {
     display: flex;
@@ -57,14 +63,15 @@ ul {
     align-items: center;
     list-style: none;
     line-height: 25px;
-
 }
 
+/* Style list contents */
 li {
     margin-bottom: 2px;
     font-size: 18px;
 }
 
+/* Style nav bar */
 #nav-bar {
     display: flex;
     justify-content: center;
@@ -80,6 +87,7 @@ li {
     font-size: 2em;
 }
 
+/* Style display text on main page */
 .index-main {
     background: black;
     color: antiquewhite;
@@ -87,6 +95,7 @@ li {
     width: 100%;
 }
 
+/* Set paramaters to display text on main page */
 .rules-container {
     display: flex;
     flex-direction: column;
@@ -95,6 +104,7 @@ li {
     margin-top: 125px;
 }
 
+/* Style enter anchor tag*/
 .enter-main-page {
     font-family: 'Press Start 2P', cursive;
     color: yellow;
@@ -135,7 +145,7 @@ li {
     align-items: center;
 }
 
-/* control station */
+/* style control station */
 #btn-container {
     display: flex;
     width: 100%;
@@ -144,7 +154,7 @@ li {
     flex-direction: column;
 }
 
-/*ScoreBoard*/
+/* style ScoreBoard*/
 #score-board {
     margin-top: 10px;
     display: flex;
@@ -156,15 +166,17 @@ li {
     color: antiquewhite;
 }
 
+/* add space to score board paragrahs */
 .score-board-p {
     margin-bottom: 10px;
 }
 
+/* Create space for last user input button and bottom of container */
 #spock-container {
     margin-bottom: 15px;
 }
 
-/* button display */
+/* style button display */
 .buttons {
     margin-top: 10px;
     width: 100%;
@@ -188,12 +200,14 @@ li {
     box-sizing: border-box;
 }
 
+/* Style text dispayed during game */
 .game-display-text {
     margin: 10px;
     font-size: 80%;
     font-family: 'Press Start 2P', cursive;
 }
 
+/* Style Reset Btn */
 .reset-and-rule-container {
     display: flex;
     flex-direction: row;
@@ -211,9 +225,9 @@ li {
     color: yellow;
     height: 25px;
     cursor: pointer;
-
 }
 
+/* Style start game button or best 3,5,7 buttons */
 .start-game button {
     border: 2px solid yellow;
     border-radius: 12px;
@@ -229,10 +243,12 @@ li {
     box-sizing: border-box;
 }
 
+/* Create space for top user button from top of container */
 #rock-container {
     margin-top: 10px;
 }
 
+/* Style return to main page button */
 .rule-btn {
     border: 2px solid yellow;
     border-radius: 12px;
@@ -249,6 +265,8 @@ li {
     font-family: 'Press Start 2P', cursive;
     font-size: 08px;
 }
+
+/* add transitions on hoover to all achor tags and button elements */
 
 a {
     transition: all .2s ease-in-out;
@@ -274,6 +292,7 @@ button:hover {
     transform: scale(1.1);
 }
 
+/* Style Footer */
 .footer {
     display: flex;
     flex-shrink: 0;
@@ -289,6 +308,8 @@ button:hover {
 .footer a {
     color: black;
 }
+
+/* Create Media Quries for responsice design */
 
 @media screen and (max-width: 894px) {
     #nav-bar {
