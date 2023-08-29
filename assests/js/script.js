@@ -7,7 +7,6 @@ const playerScoreElement = document.querySelector("#player-score");
 const computerScoreElement = document.querySelector("#computer-score");
 let player;
 let computer;
-let result;
 let playerScore = 0;
 let computerScore = 0;
 
@@ -28,9 +27,9 @@ function bestOfThree() {
         playerScoreElement.textContent = playerScore;
         computerScoreElement.textContent = computerScore;
         if (playerScore === 2)
-            alert("Congratulations you win!!\nHit reset to play again!");
+            displayMessage("Congratulations you win!!\nHit reset to play again!");
         if (computerScore === 2)
-            alert("Sorry!\nYou lost this round!\nHit reset to try again!")
+            displayMessage("Sorry!\nYou lost this round!\nHit reset to try again!")
     }));
 };
 
@@ -145,8 +144,11 @@ function scoreBoard() {
     } else if (computer == player) {
         //do nothing 
     }
-}
+};
 /** 
- * Function to reset scores and allow you to choose difficulty again. 
+ * Function to display message
 */
-
+function displayMessage(message) {
+    const msgContainer = document.querySelector("#display-message");
+    msgContainer.innerHTML = message;
+};
