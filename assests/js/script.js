@@ -150,10 +150,3 @@ function scoreBoard() {
  * Function to reset scores and allow you to choose difficulty again. 
 */
 
-function reset() {
-    playerScore = 0;
-    computerScore = 0;
-    playerScoreElement.textContent = playerScore;
-    computerScoreElement.textContent = computerScore;
-
-}
