@@ -59,6 +59,35 @@ The default scroll bar was getting lost in the black and was making navigation d
   * Bungee Shade - For all text in Navbar and Footer. 
   * Times New Roman - For UL and OL and paragraph on main page.
 
+## **Individual Page Content features**
+### **Landing Page:**
+
+* This page explains to the user how to play the game, where to click and the rules of the game. 
+* is an anchor tag, developed into a clickable button which increases in size on hoover. When the user clicks this button they will enter the game area. 
+
+### **Game Page:**
+* Includes an conatiner to hold the game. This area includes interactive buttons the user can select. First the user must select there difficulty level, once selected the game will commence. The user can make their selection and the computer will make its own. 
+
+* Game buttons include font awesome icons along with text explaing what each button is. 
+
+* Includes a reset button, this refreshes the entire page, resarting the game. 
+
+* Includes an anchor tag, this navigates the user back to the main page. 
+
+* Includes a display area, using Javascript to manipulate the DOM and display the results, user and computer selections.
+
+* Includes 3 x buttons so user can select their difficulty level. 
+
+## **Future-Enhancements**
+
+* I have not decided on any future enhancements for this site. This site was developed to meet project objectives and to display my level and understanding of Javascript today. 
+
+
+
+
+
+
+
 
 
 
