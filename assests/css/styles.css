@@ -126,7 +126,7 @@ li {
     border-style: solid;
     margin-top: 100px;
     flex-direction: column;
-    height: 600px;
+    height: 650px;
     border-radius: 8px;
     box-shadow: -10px -10px 30px 0 #fff, 10px 10px 30px 0 #1d0dca17;
     box-sizing: border-box;
@@ -148,9 +148,12 @@ li {
 /* style heading for setting difficulty */
 #difficulty-heading {
     color: antiquewhite;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    margin-top: 10px;
 }
 
 /* style control station */
@@ -249,6 +252,11 @@ li {
     cursor: pointer;
     box-shadow: #5E5DF0 0 10px 50px -10px;
     box-sizing: border-box;
+}
+
+.start-game {
+    border: 2px solid antiquewhite;
+    margin-top: 5px;
 }
 
 /* Create space for top user button from top of container */
