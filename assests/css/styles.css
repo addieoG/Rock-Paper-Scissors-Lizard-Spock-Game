@@ -145,6 +145,14 @@ li {
     align-items: center;
 }
 
+/* style heading for setting difficulty */
+#difficulty-heading {
+    color: antiquewhite;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+
 /* style control station */
 #btn-container {
     display: flex;
