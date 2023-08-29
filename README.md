@@ -31,3 +31,35 @@ This site is my first real introduction to world of javascript in the form a gam
 * Alerts are used to provide the user with content, informing them about how to play, if they won, loss, drew and ultimatly if declares who won the game outright. It will also exlain how to reset the game and or return to home screen. 
 
 * The site provides a link to the developers github page. 
+
+### **Wireframes:**
+To aid with the design stage, I used wireframes. After my last project, I really wanted to focus on mobile first as I lost a lot of time resizing. Both layouts are the same. 
+* Mobile Wireframes:
+    * ![Landing Page](Docs/Screenshots/WireFrames-Index-Page.jpg)
+    * ![Game Page](Docs/Screenshots/WireFrames-Index-Page.jpg)
+
+### **Color Scheme:**
+When deciding the color scheme, I decided I wanted to go with an 80's / 90's retro arcadey feel. I liked the yellow and black, reminded me of pacman. 
+
+## **Current Features Common to all pages**
+###  **Custom Scroll Bar**
+The default scroll bar was getting lost in the black and was making navigation difficult on the page. A custom scroll bar was implemented to avoid this allowing for a more user friendly UX.
+
+#### *Title:*
+![Page title](docs/screenshots/page-title.jpg)
+* The title is nice and bright with an arcadey feel, it states the name of the game. 
+
+#### *Footer:*
+![Footer](docs/screenshots/footer.png)
+* The footer follows the same styling as the header, only it has a follow me link that links the user to the developers git hub. 
+
+## **Typography**
+* Throughout the page, there are three fonts used:
+  * Press Start 2P - For all subheadings, game display text and buttons. 
+  * Bungee Shade - For all text in Navbar and Footer. 
+  * Times New Roman - For UL and OL and paragraph on main page.
+
+
+
+
+
