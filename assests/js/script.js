@@ -37,6 +37,7 @@ function bestOfThree() {
         }
     }))
 }
+
 /**
  * Function runs the best of 5 game
  * Displays the players selection, computers selection and score board, 
@@ -159,6 +160,7 @@ function scoreBoard() {
         //do nothing 
     }
 }
+
 /** 
  * Function to display message
 */

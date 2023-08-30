@@ -34,7 +34,6 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
 /* set the body of the game background color */
@@ -384,50 +383,51 @@ button:hover {
 @media screen and (max-width: 335px) {
     #nav-bar {
         font-size: 10px;
-
-        .footer {
-            position: fixed;
-        }
+        width: 110%;
     }
 
-    @media screen and (max-width: 335px) {
-        #game-container {
-            float: left;
-        }
+    .footer {
+        position: fixed;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    #game-container {
+        float: left;
+    }
+}
+
+/* Media query for screens from 430px down to 320px */
+@media screen and (max-width: 430px) {
+
+    body {
+        font-size: 14px;
+
     }
 
-    /* Media query for screens from 430px down to 320px */
-    @media screen and (max-width: 430px) {
-        /* Adjust font sizes, padding, margins, layout, etc. for smaller screens */
+    #display-message {
+        font-size: 7px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+    }
 
-        /* For example, you could adjust font sizes */
-        body {
-            font-size: 14px;
+    .game-display-text {
+        font-size: 12px;
+    }
 
-        }
+    .player-selection {
+        font-size: 10px;
+    }
 
-        #display-message {
-            font-size: 7px;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            padding-bottom: 10px;
+    .footer {
+        position: fixed;
+        height: 50px;
+        width: 110%;
+    }
 
-        }
-
-        .game-display-text {
-            font-size: 12px;
-
-        }
-
-        .player-selection {
-            font-size: 10px;
-
-        }
-
-        .footer {
-            position: fixed;
-        }
-
+    .enter-main-page {
+        margin-bottom: 80px;
     }
 }
