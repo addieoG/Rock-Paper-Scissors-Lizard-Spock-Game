@@ -14,8 +14,8 @@ This site is my first real introduction to world of javascript in the form a gam
     * [***Color Scheme***](#color-scheme)
 1. [**Current Features Common to all pages**](#current-features-common-to-all-pages)
     * [***Custom Scroll Bar:***](#custom-scroll-bar)
-        * [*Title*](#title)
-        * [*Footer*](#footer)
+    * [***Title***](#title)
+    * [***Footer***](#footer)
      * [**Typography**](#typography)
 1. [**Individual Page Content features**](#individual-page-content-features)
     * [**Landing page:**](#landing-page)
@@ -59,8 +59,8 @@ This site is my first real introduction to world of javascript in the form a gam
 ### **Wireframes:**
 To aid with the design stage, I used wireframes. After my last project, I really wanted to focus on mobile first as I lost a lot of time resizing. Both layouts are the same. 
 * Mobile Wireframes:
-    * ![Landing Page](Docs/Screenshots/WireFrames-Index-Page.jpg)
-    * ![Game Page](Docs/Screenshots/WireFrames-Index-Page.jpg)
+    * ![Landing Page](Docs/Screenshots/landing-page.png)
+    * ![Game Page](Docs/Screenshots/games-page.png)
 
 ### **Color Scheme:**
 When deciding the color scheme, I decided I wanted to go with an 80's / 90's retro arcadey feel. I liked the yellow and black, reminded me of pacman. 

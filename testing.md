@@ -6,9 +6,10 @@
   * [**Validators**](#validators)
       * [*HTML*](#html---httpsvalidatorw3orgnu)
       * [*CSS*](#css---httpsjigsaww3orgcss-validator)
+       * [*JS*](#js---https://jshint.com/)
   * [**Lighthouse Scores**](#lighthouse-scores)
       * [*Desktop Version:*](#desktop-version)
-      * [*Mobile Version*](#mobile-version)
+   
 
 ## **During Development Testing**
 During the development process, I manually tested in the following ways:-
