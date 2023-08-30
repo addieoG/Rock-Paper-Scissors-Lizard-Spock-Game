@@ -81,11 +81,9 @@ When deciding the color scheme, I decided I wanted to go with an 80's / 90's ret
 The default scroll bar was getting lost in the black and was making navigation difficult on the page. A custom scroll bar was implemented to avoid this allowing for a more user friendly UX.
 
 #### *Title:*
-![Page title](docs/screenshots/page-title.jpg)
 * The title is nice and bright with an arcadey feel, it states the name of the game. 
 
 #### *Footer:*
-![Footer](docs/screenshots/footer.png)
 * The footer follows the same styling as the header, only it has a follow me link that links the user to the developers git hub. 
 
 ## **Typography**
