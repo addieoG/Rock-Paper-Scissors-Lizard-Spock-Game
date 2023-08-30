@@ -2,7 +2,31 @@
 ## **Site Overview**
 This site is my first real introduction to world of javascript in the form a game of rock, paper, scissors, lizard, spock game. The site, inspired by 80's, 90's retro gaming has a very simple flow and design to it. It opens with on a landing page, allowing the user to have their first interaction. On this page, they can read about rules of the game and more importantly how to enter and play. Once they decide to enter, they will be alerted by pop up, reminding them to choose their difficulty level (to which there are three settings) to commence the game. On the game page, once the user has selected their difficulty preference the game will commence. The user will select form a choice of 5 inputs, the computer will simultaneously select their choice through the beautiful form of logic. The game will then map each users choice, decide who won the round, track the score and ultimatly decide who won the game through another alert. This alert will also inform the user who to restart the game. There is also an exit button, in the form of a rules button that will direct the user back to the main page. The header holds a simple text displaying the name of the game while the footer holds an anchor tag, directing ths user to follow on the creaters github page. 
 
--add table of contents later. 
+![Am I responsive screenshot](docs/Screenshots/am-i-responsive-test.png)
+## Table of contents:
+1. [**Site Overview**](#site-overview)
+1. [**Planning stage**](#planning-stage)
+    * [***Target Audiences***](#target-audiences)
+    * [***User Stories***](#user-stories)
+    * [***Site Aims***](#site-aims)
+    * [***How Is This Will Be Achieved:***](#how-is-this-will-be-achieved)
+    * [***Wireframes***](#wireframes)
+    * [***Color Scheme***](#color-scheme)
+1. [**Current Features Common to all pages**](#current-features-common-to-all-pages)
+    * [***Custom Scroll Bar:***](#custom-scroll-bar)
+        * [*Title*](#title)
+        * [*Footer*](#footer)
+     * [**Typography**](#typography)
+1. [**Individual Page Content features**](#individual-page-content-features)
+    * [**Landing page:**](#landing-page)
+    * [**Game page**](#game-page)
+1. [**Future-Enhancements**](#future-enhancements)
+1. [**Testing Phase**](#testing-phase)
+1. [**Deployment**](#deployment)
+1. [**Credits**](#credits)
+    * [**Honorable mentions**](#honorable-mentions)
+    * [**General reference**](#general-reference)
+    * [**Content**](#content)
 
 ## **Planning stage**
 ### **Target Audiences:**
@@ -82,13 +106,38 @@ The default scroll bar was getting lost in the black and was making navigation d
 
 * I have not decided on any future enhancements for this site. This site was developed to meet project objectives and to display my level and understanding of Javascript today. 
 
+## **Testing Phase**
+I have included details of testing both during development and post development in a separate document called [TESTING.md](TESTING.md).
+***
 
+## **Deployment**
+To deploy my project on Github, I followed the following instructions: -
 
+1. From the project's [repository](## **Deployment**
+I deployed the page on GitHub pages via the following procedure: -
 
+1. From the project's [repository](https://github.com/addieoG/Rock-Paper-Scissors-Lizard-Spock-Game), go to the **Settings** tab.
+2. From the left-hand menu, select the **Pages** tab.
+3. Under the **Branch** section, select the **Main** branch from the drop-down menu and click **Save**.
+4. A message will be displayed to indicate a successful deployment to GitHub pages and provide the live link.
 
+You  can find the live site via the following URL - [GameZone](https://addieog.github.io/Rock-Paper-Scissors-Lizard-Spock-Game/index.html))
 
+## **Credits**
+### **Honorable mentions**
+A huge thank you to the following people, whom without, this project would never have been completed. 
 
+* [Daisy Mc Girr](https://github.com/Daisy-McG) - Thank you Daisy, you took me on when you already had a full work load, provided some great insights and new tips and tools. You really helped me get over the line with this one. 
+* [David Bowers](https://github.com/dnlbowers) - an absolute gent and a scholar. Although I missed him on this project through my own fault and not booking on time, he made every effort to ensure I was well taken care off and in the wonderful hands with the great Daisy Mc Girr
 
+### **General reference:**
+* The project is influenced by Code Institutes project called Love Maths, I have tried to take what I have learned and applied it with own deviation.  
+* I relied upon W3schools, MDN web docs and youtube for references throughout the project. 
+* Other influences came from [Bro Code](https://www.youtube.com/watch?v=n1_vHArDBRA) and [Beautiful CSS buttons examples](https://getcssscan.com/css-buttons-examples).
+
+### **Content:**
+* All content was written and designed by myself. 
+* Icons in the footer were taken from [Font Awesome](https://fontawesome.com)
 
 
 

@@ -35,7 +35,7 @@ function bestOfThree() {
             disableBtn();
             displayMessage("Sorry!\nYou lost this round!\nHit reset to try again!");
         }
-    }))
+    }));
 }
 
 /**
@@ -91,7 +91,7 @@ function bestOfSeven() {
             disableBtn();
             displayMessage("Sorry!\nYou lost this round!\nHit reset to try again!");
         }
-    }))
+    }));
 }
 
 /**
