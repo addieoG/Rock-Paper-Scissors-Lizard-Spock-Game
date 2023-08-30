@@ -71,6 +71,7 @@ To aid with the design stage, I used wireframes. After my last project, I really
 * Mobile Wireframes:
     * ![Am I Responsive](Docs/Screenshots/am-i-responsive-test.png)
     * ![Am I Responsive](Docs/Screenshots/am-i-responsive-test.png)
+    ![Am I Responsive](Docs/Screenshots/am-i-responsive-test.png)
 
 ### **Color Scheme:**
 When deciding the color scheme, I decided I wanted to go with an 80's / 90's retro arcadey feel. I liked the yellow and black, reminded me of pacman. 
