@@ -201,10 +201,6 @@ I have only included one screenshot for desktop as I would happy with the result
 
 ## **Deployment**
 To deploy my project on Github, I followed the following instructions: -
-
-1. From the project's [repository](## **Deployment**
-I deployed the page on GitHub pages via the following procedure: -
-
 1. From the project's [repository](https://github.com/addieoG/Rock-Paper-Scissors-Lizard-Spock-Game), go to the **Settings** tab.
 2. From the left-hand menu, select the **Pages** tab.
 3. Under the **Branch** section, select the **Main** branch from the drop-down menu and click **Save**.
