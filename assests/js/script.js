@@ -16,7 +16,7 @@ let computerScore = 0;
  * alerts player of game type and alerts player of winner
  */
 function bestOfThree() {
-    alert("You Selected Best Of Three");
+    displayMessage("You slected best of three!");
     playerSelection.forEach(button => button.addEventListener("click", () => {
         player = button.textContent;
         computerSelection();
@@ -26,20 +26,24 @@ function bestOfThree() {
         displayResult.textContent = determineWinner();
         playerScoreElement.textContent = playerScore;
         computerScoreElement.textContent = computerScore;
-        if (playerScore === 2)
-            displayMessage("Congratulations you win!!\nHit reset to play again!");
-        if (computerScore === 2)
-            displayMessage("Sorry!\nYou lost this round!\nHit reset to try again!")
-    }));
-};
+        if (playerScore === 2) {
+            disableBtn();
+            displayMessage("Sorry!\nYou lost this round!\nHit reset to try again!");
+        }
 
+        if (computerScore === 2) {
+            disableBtn();
+            displayMessage("Sorry!\nYou lost this round!\nHit reset to try again!");
+        }
+    }))
+}
 /**
  * Function runs the best of 5 game
  * Displays the players selection, computers selection and score board, 
  * alerts player of game type and alerts player of winner
  */
 function bestOfFive() {
-    alert("You Selected Best Of Five");
+    displayMessage("You slected best of five!");
     playerSelection.forEach(button => button.addEventListener("click", () => {
         player = button.textContent;
         computerSelection();
@@ -49,12 +53,17 @@ function bestOfFive() {
         displayResult.textContent = determineWinner();
         playerScoreElement.textContent = playerScore;
         computerScoreElement.textContent = computerScore;
-        if (playerScore === 3)
-            alert("Congratulations you win!!\nHit reset to play again!");
-        if (computerScore === 3)
-            alert("Sorry!\nYou lost this round!\nHit reset to try again!")
+        if (playerScore === 3) {
+            disableBtn();
+            displayMessage("Sorry!\nYou lost this round!\nHit reset to try again!");
+        }
+
+        if (computerScore === 3) {
+            disableBtn();
+            displayMessage("Sorry!\nYou lost this round!\nHit reset to try again!");
+        }
     }));
-};
+}
 
 /**
  * Function runs the best of 7 game
@@ -62,7 +71,7 @@ function bestOfFive() {
  * alerts player of game type and alerts player of winner
  */
 function bestOfSeven() {
-    alert("You Selected Best Of Seven");
+    displayMessage("You slected best of seven!");
     playerSelection.forEach(button => button.addEventListener("click", () => {
         player = button.textContent;
         computerSelection();
@@ -72,12 +81,17 @@ function bestOfSeven() {
         displayResult.textContent = determineWinner();
         playerScoreElement.textContent = playerScore;
         computerScoreElement.textContent = computerScore;
-        if (playerScore === 4)
-            alert("Congratulations you win!!\nHit reset to play again!");
-        if (computerScore === 4)
-            alert("Sorry!\nYou lost this round!\nHit reset to try again!")
-    }));
-};
+        if (playerScore === 4) {
+            disableBtn();
+            displayMessage("Sorry!\nYou lost this round!\nHit reset to try again!");
+        }
+
+        if (computerScore === 4) {
+            disableBtn();
+            displayMessage("Sorry!\nYou lost this round!\nHit reset to try again!");
+        }
+    }))
+}
 
 /**
  * function to generate computer response, generates a random int between 1 and 5 and returns a string
@@ -102,7 +116,7 @@ function computerSelection() {
             computer = "Spock";
             break;
     }
-};
+}
 
 /** 
  * logic statement that displays if you won, lost or it's a draw to the dom
@@ -113,17 +127,17 @@ function determineWinner() {
         (player == "Scissors" && (computer == "Paper" || computer == "Lizard")) ||
         (player == "Lizard" && (computer == "Paper" || computer == "Spock")) ||
         (player == "Spock" && (computer == "Rock" || computer == "Scissors"))) {
-        return "You Win"
+        return "You Win";
     } else if ((computer == "Rock" && (player == "Scissors" || player == "Lizard")) ||
         (computer == "Paper" && (player == "Rock" || player == "Spock")) ||
         (computer == "Scissors" && (player == "Paper" || player == "Lizard")) ||
         (computer == "Lizard" && (player == "Paper" || player == "Spock")) ||
         (computer == "Spock" && (player == "Rock" || player == "Scissors"))) {
-        return "Sorry you lose!"
+        return "Sorry you lose!";
     } else if (computer == player) {
-        return "it's a tie"
+        return "it's a tie";
     }
-};
+}
 
 /** 
  * logic statement that determines if the player or the computer has won
@@ -144,11 +158,22 @@ function scoreBoard() {
     } else if (computer == player) {
         //do nothing 
     }
-};
+}
 /** 
  * Function to display message
 */
 function displayMessage(message) {
     const msgContainer = document.querySelector("#display-message");
     msgContainer.innerHTML = message;
-};
+}
+
+/** 
+ * Function to disable btn after game runs forcing user to reset
+*/
+function disableBtn() {
+    document.querySelector("#rock-container").disabled = true;
+    document.querySelector("#spock-container").disabled = true;
+    document.querySelector("#paper-container").disabled = true;
+    document.querySelector("#scissors-container").disabled = true;
+    document.querySelector("#lizard-container").disabled = true;
+}
