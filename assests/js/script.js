@@ -28,7 +28,7 @@ function bestOfThree() {
         computerScoreElement.textContent = computerScore;
         if (playerScore === 2) {
             disableBtn();
-            displayMessage("Sorry!\nYou lost this round!\nHit reset to try again!");
+            displayMessage("Congrats!\nYou Won!!\nHit reset to try again!");
         }
 
         if (computerScore === 2) {
@@ -55,7 +55,7 @@ function bestOfFive() {
         computerScoreElement.textContent = computerScore;
         if (playerScore === 3) {
             disableBtn();
-            displayMessage("Sorry!\nYou lost this round!\nHit reset to try again!");
+            displayMessage("Congrats!\nYou Won!!\nHit reset to try again!");
         }
 
         if (computerScore === 3) {
@@ -83,7 +83,7 @@ function bestOfSeven() {
         computerScoreElement.textContent = computerScore;
         if (playerScore === 4) {
             disableBtn();
-            displayMessage("Sorry!\nYou lost this round!\nHit reset to try again!");
+            displayMessage("Congrats!\nYou Won!\nHit reset to try again!");
         }
 
         if (computerScore === 4) {
